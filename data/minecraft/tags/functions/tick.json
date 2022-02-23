@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    "smart_motion:core/tick"
+  ]
+}
