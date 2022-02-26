@@ -14,7 +14,7 @@ execute unless entity @s[scores={sm.Z=-1..1}] run function smart_motion:core/can
 execute unless entity @s[scores={sm.Y=..1}] store success score @s sm.Y run tp @s ~ ~0.01 ~
 #天井をすり抜けないように上限補正
 scoreboard players set #YMotion sm.Calc 100000
-execute if entity @s[x_rotation=-90..0] if predicate smart_motion:limit_y_motion run function smart_motion:core/limit_y_motion
+execute if entity @s[x_rotation=-90..0] if predicate smart_motion:limit_y_motion run function smart_motion:core/limit_y_motion/
 #ブロック判定
 execute unless entity @s[scores={sm.X=-1..1,sm.Y=-1..1,sm.Z=-1..1}] run function smart_motion:core/block
 
