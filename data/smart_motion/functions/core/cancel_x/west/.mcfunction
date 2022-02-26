@@ -2,6 +2,8 @@
 
 #このブロック
 execute if block ~ ~ ~ #smart_motion:ignore_collision align xyz positioned ~0.5 ~ ~ if entity @s[dx=0,dy=0,dz=0] positioned as @s store success score @s sm.X run tp @s ~-0.01 ~ ~
+#このブロック 外向き逆さ階段の中央
+execute if block ~ ~ ~ #minecraft:stairs[half=top] run function smart_motion:core/cancel_x/west/this_stairs
 #当たり判定なし
 execute if block ~-0.45 ~ ~ #smart_motion:no_collision store success score @s sm.X run tp @s ~-0.01 ~ ~
 #slabs上半分
